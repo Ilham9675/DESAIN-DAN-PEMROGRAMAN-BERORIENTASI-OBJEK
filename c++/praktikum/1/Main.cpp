@@ -26,5 +26,19 @@ int main(){
 
     }
     
-    
+    cout << '\n' << "Automatic output : " << '\n';
+    cout << "the first human's name is " << rain.get_name() << '\n';
+    cout << "the first human's gender id " << rain.get_gender() << '\n';
+    cout << "the second human's name is " << techi.get_name() << '\n';
+    cout << "the second human's gender id " << techi.get_gender() << '\n';
+
+
+    cout << "Iteration Output " << '\n';
+
+    i = 0;
+    for(list<Human>::iterator it = llist.begin();it != llist.end();it++,i++){
+        cout << (i+1) << ". " << it->get_name() << " | " << it->get_gender() << '\n';
+    }
+
+    return 0;
 }
